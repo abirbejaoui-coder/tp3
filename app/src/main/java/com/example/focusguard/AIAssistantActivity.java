@@ -47,6 +47,7 @@ public class AIAssistantActivity extends AppCompatActivity {
         btBackAi = findViewById(R.id.bt_back_ai);
 
         btBackAi.setOnClickListener(v -> {
+            setResult(RESULT_OK);
             finish();
         });
     }

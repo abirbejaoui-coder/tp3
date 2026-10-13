@@ -41,8 +41,8 @@ public class StatisticsActivity extends AppCompatActivity {
         });
 
         btBackStatistics.setOnClickListener(v -> {
+            setResult(RESULT_OK);
             finish();
         });
-
     }
 }

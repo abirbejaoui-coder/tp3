@@ -58,7 +58,7 @@ public class SubjectActivity extends AppCompatActivity {
             }
 
             int duration = Integer.parseInt(durationText);
-
+            /* creation du bundle puis insertion de data dans le bundle puis insersion du bundle dans l intent */
             Bundle bundle = new Bundle();
 
             bundle.putString("subject", subject);
@@ -77,6 +77,7 @@ public class SubjectActivity extends AppCompatActivity {
             startActivity(intent);
         });
         btBackSubject.setOnClickListener(v -> {
+            setResult(RESULT_OK); //preparer le resultat
             finish();
         });
     }

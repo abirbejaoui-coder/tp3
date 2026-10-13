@@ -138,5 +138,6 @@ public class SessionActivity extends AppCompatActivity {
         super.onDestroy();
 
         handler.removeCallbacks(timerRunnable);
+        /*tretiri les exécutions programmées correspondant au Runnable donné. */
     }
 }
